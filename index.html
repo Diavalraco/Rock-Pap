@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="heading">
+      <h1>Rock Paper Scissors</h1>
+      <section class="score">
+        <div class="computer-score">
+          <label
+            >Computer<br />
+            Score</label
+          >
+          <p id="computer-value">0</p>
+        </div>
+        <div class="my-score">
+          <label>
+            Your <br />
+            Score
+          </label>
+          <p id="your-value">0</p>
+        </div>
+      </section>
+    </section>
+
+    <section class="game">
+      <button class="hand1" onclick="count_score('stone');">
+        <img src="./assests/stone.png" alt="" />
+      </button>
+      <div id="line1"></div>
+      <button class="hand2" onclick="count_score('scissors');">
+        <img src="./assests/scissors.png" alt="" />
+      </button>
+      <div id="line2"></div>
+      <button class="hand3" onclick="count_score('paper');">
+        <img src="./assests/paper.png" alt="" />
+      </button>
+      <div id="line3"></div>
+    </section>
+
+    <!-- Results -->
+
+    <section class="results1">
+      <div class="your-choice">
+        <h3>YOU PICKED</h3>
+        <div class="first-layer">
+          <div class="second-layer">
+            <div class="third-layer">
+              <button id="first-win">
+                <img src="" alt="f" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="game-result">
+        <span>
+          <h1>YOU WIN</h1>
+          <br />
+          <p>AGAINST THE PC</p>
+        </span>
+        <button class="playagain" onclick="playagain()">PLAY AGAIN</button>
+      </div>
+      <div class="computer-choice">
+        <h3>PC PICKED</h3>
+        <button id="second-win"><img src="" alt="f" /></button>
+      </div>
+    </section>
+
+    <section class="results2">
+      <div class="your-choice">
+        <h3>YOU PICKED</h3>
+        <button id="second-win"><img src="" alt="f" /></button>
+      </div>
+      <div class="game-result">
+        <span>
+          <h1>YOU LOST</h1>
+          <br />
+          <p>AGAINST THE PC</p>
+        </span>
+        <button class="playagain" onclick="playagain()">PLAY AGAIN</button>
+      </div>
+      <div class="computer-choice">
+        <h3>PC PICKED</h3>
+        <div class="first-layer">
+          <div class="second-layer">
+            <div class="third-layer">
+              <button id="first-win">
+                <img src="" alt="f" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="results3">
+      <div class="your-choice">
+        <h3>YOU PICKED</h3>
+        <button id="second-win"><img src="" alt="f" /></button>
+      </div>
+      <div class="game-result">
+        <span> </span>
+        <button class="playagain" onclick="playagain()">PLAY AGAIN</button>
+      </div>
+      <div class="computer-choice">
+        <h3>PC PICKED</h3>
+        <button id="first-win">
+          <img src="" alt="f" />
+        </button>
+      </div>
+    </section>
+
+    <div class="ruleNotes" id="rules">
+      <span id="closeBtn" class="close"
+        ><img src="./assests/X.png" alt=""
+      /></span>
+      <h1>Game Rules</h1>
+      <ul>
+        <li>Rock beats scissors, scissors beat paper, and paper beats rock.</li>
+        <li>
+          Agree ahead of time whether you’ll count off “rock, paper, scissors,
+          shoot” or just “rock, paper, scissors.”
+        </li>
+        <li>
+          Use rock, paper, scissors to settle minor decisions or simply play to
+          pass the time
+        </li>
+        <li>
+          If both players lay down the same hand, each player lays down another
+          hand
+        </li>
+      </ul>
+    </div>
+
+    <button id="rulesButton">Rules</button>
+    <button id="next"><a href="finish.html">Next</a></button>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
